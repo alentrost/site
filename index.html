@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8" />
+  <title>LinkedIn Login</title>
+  <link rel="icon" type="image/x-icon" href="slike/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <img id="logo" src="slike/Linkedin.png" alt="LinkedIn logo">
+  <div id="border">
+    <h1 id="text">Sign in</h1>
+    <p>New to LinkedIn? <a href="#">Join now</a></p>
+    <button class="social-button" type="button">
+      <span class="google-icon" aria-hidden="true">G</span>
+      <span>Continue with Google</span>
+    </button>
+    <button class="social-button" type="button">
+      <span class="apple-icon" aria-hidden="true">&#63743;</span>
+      <span>Sign in with Apple</span>
+    </button>
+    <p id="policy">By continuing, you agree to the LinkedIn <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>, and <a href="#">Cookie Policy</a>.</p>
+    <div class="divider" role="separator" aria-label="or">
+      <span>or</span>
+    </div>
+    <label class="field-label" for="email">Email or phone</label>
+    <input id="email" class="text-field" type="text" autocomplete="username">
+    
+    <label class="field-label" for="password">Password</label>
+    <div class="password-field">
+      <input id="password" class="text-field" type="password" autocomplete="current-password">
+      <button id="toggle-password" class="password-toggle is-hidden" type="button" aria-label="Show password" aria-pressed="false">
+        <span class="eye-icon" aria-hidden="true">&#128065;</span>
+      </button>
+    </div>
+  </div>
+ 
+  <script>
+    const password = document.querySelector("#password");
+    const togglePassword = document.querySelector("#toggle-password");
+
+    togglePassword.addEventListener("click", () => {
+      const isHidden = password.type === "password";
+      password.type = isHidden ? "text" : "password";
+      togglePassword.setAttribute("aria-label", isHidden ? "Hide password" : "Show password");
+      togglePassword.setAttribute("aria-pressed", String(isHidden));
+      togglePassword.classList.toggle("is-hidden", !isHidden);
+    });
+  </script>
+</body>
+</html>
