@@ -1,27 +1,24 @@
-# Site
+# Učna naloga: kopija LinkedIn prijavnega obrazca
 
-This is a simple static website project.
+To je spletna stran, ki predstavlja kopijo prijavnega obrazca LinkedIn. Cilj naloge je utrditi osnove HTML in CSS ter naučiti se oblikovanja spletnega vmesnika po danem vzorcu.
 
-## Project structure
+## Opis strani
 
-- `index.html` - main page
-- `css/style.css` - page styling
-- `slike/` - image assets
+Na strani je prikazan prijavni obrazec z:
 
-## Run locally
+- logotipom podjetja,
+- naslovom "Sign in",
+- gumbami za prijavo z Google in Apple,
+- pravnim besedilom in povezavami,
+- ločilnikom "or",
+- poljema za e-poštni naslov in geslo,
+- gumbico za prikaz gesla,
+- povezavo "Forgot password?",
+- potrditvenim poljem "Keep me signed in",
+- gumbo "Sign in".
 
-Open `index.html` directly in a browser, or serve the folder locally with:
+Celotna zasnova je narejena v statičnem HTML-u z uporabo CSS za oblikovanje in podrobnosti, kot so obrobe, razmik, gumbi, barve in fokus efekti.
 
-```bash
-python3 -m http.server 8000
-```
+## Namen naloge
 
-Then visit:
-
-```text
-http://localhost:8000
-```
-
-## Notes
-
-This project is a lightweight front-end page with custom styling and a LinkedIn-style sign-in form.
+To je učno gradivo, v katerem sem prekopiral originalni dizajn LinkedIn prijave in ga prilagodil v lastni projekt. Naloga je namenjena vadbi HTML/CSS strukturiranja, oblikovanja in posnemanja doseženega dizajna.
