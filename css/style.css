@@ -19,6 +19,53 @@
     margin-bottom: 20px;
     font-family: "Segoe UI", "Open Sans", sans-serif;
 }
+#policy {
+    font-size: 12px;
+    text-align: left;
+    margin-top: 20px;
+}
+#pass-reset {
+    text-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+.remember-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0 18px;
+}
+#remember-me {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    border: 1px solid #666;
+    border-radius: 4px;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+}
+#remember-me:checked {
+    background: #0a66c2;
+    border-color: #0a66c2;
+}
+#remember-me:checked::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.remember-label {
+    font-size: 15px;
+    color: #1f1f1f;
+    cursor: pointer;
+}
 .social-button {
     width: 100%;
     height: 42px;
@@ -50,11 +97,7 @@
     font-size: 21px;
     line-height: 1;
 }
-#policy {
-    font-size: 12px;
-    text-align: left;
-    margin-top: 20px;
-}
+
 .divider {
     display: flex;
     align-items: center;
@@ -129,4 +172,16 @@
     height: 2px;
     background-color: #444;
     transform: translateY(-50%) rotate(45deg);
+}
+#sign-in {
+    background-color: rgb(11, 103, 195);
+    border: none;
+    color: white;
+    border-radius: 22px;
+    width: 100%;
+    height: 42px;
+    font-size: 18px;
+}
+#sign-in:hover {
+    background-color: rgb(10, 48, 131);
 }
